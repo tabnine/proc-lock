@@ -1,0 +1,34 @@
+on: [push, pull_request]
+name: CI
+jobs:
+  clippy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          components: clippy
+      - name: Cargo Clippy Check
+        uses: actions-rs/clippy@master
+        with:
+          args: --all --all-targets --all-features -- --no-deps -D clippy::pedantic -D warnings
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cargo Fmt Check
+        uses: icepuma/rust-action@master
+        with:
+          args: cargo fmt --all -- --check
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cargo Fmt Check
+        uses: icepuma/rust-action@master
+        with:
+          args: cargo fmt --all -- --check
