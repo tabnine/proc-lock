@@ -28,7 +28,8 @@ jobs:
         os: [ ubuntu-latest, windows-latest, macos-latest ]
     steps:
       - uses: actions/checkout@v1
-      - name: Cargo Fmt Check
-        uses: icepuma/rust-action@master
+      - uses: actions-rs/toolchain@v1
         with:
-          args: cargo fmt --all -- --check
+          toolchain: stable
+      - name: Run Tests
+        run: cargo test
