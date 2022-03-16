@@ -1,9 +1,9 @@
 [package]
 name = "proclock-macro"
+description = "Macro API for the proclock crate"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-license-file = "../LICENSE"
 readme = "../README.md"
 documentation = "https://docs.rs/proclock"
 repository = "https://github.com/tabnine/proclock"
@@ -15,7 +15,8 @@ quote = "1.0.5"
 proc-macro2 = "1.0.12"
 syn = { version = "1.0.40", features = ["full"] }
 darling = "0.13.1"
-proclock-api = { path = "../proclock-api" }
+proclock-api = "0.1.0"
+#proclock-api = { path = "../proclock-api" }
 
 [lib]
 proc-macro = true

@@ -1,9 +1,9 @@
 [package]
 name = "proclock"
+description = "A simple cross-process locking API"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-license-file = "../LICENSE"
 readme = "../README.md"
 documentation = "https://docs.rs/proclock"
 repository = "https://github.com/tabnine/proclock"
@@ -11,5 +11,7 @@ repository = "https://github.com/tabnine/proclock"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-proclock-macro = { path = "../proclock-macro", version = "0.1.0" }
-proclock-api = { path = "../proclock-api", version = "0.1.0" }
+proclock-macro = "0.1.0"
+proclock-api = "0.1.0"
+#proclock-macro = { path = "../proclock-macro", version = "0.1.0" }
+#proclock-api = { path = "../proclock-api", version = "0.1.0" }

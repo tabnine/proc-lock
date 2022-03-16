@@ -1,9 +1,9 @@
 [package]
 name = "proclock-api"
+description = "APIs for the proclock crate"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-license-file = "../LICENSE"
 readme = "../README.md"
 documentation = "https://docs.rs/proclock"
 repository = "https://github.com/tabnine/proclock"
