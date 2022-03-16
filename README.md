@@ -34,3 +34,6 @@ fn main() {
 #[proclock(name = "my_lock.lock", blocking = true)] // default value for `blocking` is `false`
 fn a_sensitive_function() {}
 ```
+
+### Current status
+⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.

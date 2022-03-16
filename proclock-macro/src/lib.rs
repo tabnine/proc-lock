@@ -21,6 +21,8 @@ use syn::{AttributeArgs, ItemFn};
 /// #[proclock(name = "my_lock.lock", absolute = false, blocking = true)]
 /// fn my_locked_function() {}
 /// ```
+/// # Panics
+/// This macro will panic if the underlying locking function call fails.
 #[proc_macro_attribute]
 pub fn proclock(args: TokenStream, input: TokenStream) -> TokenStream {
     let options = syn::parse_macro_input!(args as AttributeArgs);
