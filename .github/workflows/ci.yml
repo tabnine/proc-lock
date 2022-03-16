@@ -1,7 +1,7 @@
 on: [push, pull_request]
 name: CI
 jobs:
-  clippy-fmt:
+  clippy-and-fmt:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -26,4 +26,4 @@ jobs:
         with:
           toolchain: stable
       - name: Run Tests
-        run: cargo test
+        run: cargo test -- --show-output
