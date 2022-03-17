@@ -36,8 +36,5 @@
 //! fn a_sensitive_function() {}
 //! ```
 
-#[cfg(test)]
-mod tests;
-
 pub use proc_lock_api::*;
 pub use proc_lock_macro::*;

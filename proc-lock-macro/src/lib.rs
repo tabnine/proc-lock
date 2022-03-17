@@ -16,8 +16,7 @@ use syn::{AttributeArgs, ItemFn};
 /// - `absolute`: Indicates whether the provided `name` should be created at the [`temp_dir`](std::env::temp_dir())
 /// or as an absolute path (at the root directory). Default is `false`.
 /// # Example
-/// ```rust
-/// use proc_lock_macro::proc_lock;
+/// ```rust,ignore
 ///
 /// #[proc_lock(name = "my_lock.lock", absolute = false)]
 /// fn my_locked_function() {}
@@ -35,7 +34,7 @@ pub fn proc_lock(args: TokenStream, input: TokenStream) -> TokenStream {
     };
 
     let locking_code = quote! {
-        use proc_lock_api::{lock, try_lock, LockPath};
+        use proc_lock::{lock, try_lock, LockPath};
         let lock_path = if #absolute {
             LockPath::FullPath(#name)
         } else {
