@@ -37,3 +37,6 @@ fn a_sensitive_function() {}
 
 ### Current status
 ⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.
+
+### Changelist
+- 0.2.0 - [breaking changes] Stop supporting non-blocking macro api
