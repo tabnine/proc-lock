@@ -44,3 +44,7 @@ fn a_sensitive_function() {}
 - 0.3.0 - [breaking changes] Rename crate to `proc-lock`, and the macro to `proc_lock`
 - 0.2.1 - Add a notice about renaming the crate 
 - 0.2.0 - [breaking changes] Stop supporting non-blocking macro api
+
+### Contribution
+Please refer to [our prject](https://github.com/tabnine/proc-lock/projects/1), as well as open issues.
+Also feel free to discuss and open PRs if you want to contribute anything not mentioned in the above places.
