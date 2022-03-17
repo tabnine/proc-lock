@@ -9,12 +9,12 @@
 //! In your `Cargo.toml` file, add:
 //! ```toml
 //! [dependencies]
-//! proclock = "*"
+//! proc-lock = "*"
 //! ```
 //!
 //! ### Using the API directly
 //! ```rust
-//! use proclock::{lock, LockPath};
+//! use proc_lock::{lock, LockPath};
 //!
 //! let lock_path = LockPath::Tmp("my_lock.lock");
 //! let guard = lock(&lock_path).unwrap();
@@ -25,19 +25,19 @@
 //!
 //! ### Using macros
 //! ```rust
-//! use proclock::proclock;
+//! use proc_lock::proc_lock;
 //!
 //! fn main() {
 //!     // A lock will be acquired at the beginning of this function, and will be released at the end.
 //!     a_sensitive_function();
 //! }
 //!
-//! #[proclock(name = "my_lock.lock")]
+//! #[proc_lock(name = "my_lock.lock")]
 //! fn a_sensitive_function() {}
 //! ```
 
 #[cfg(test)]
 mod tests;
 
-pub use proclock_api::*;
-pub use proclock_macro::*;
+pub use proc_lock_api::*;
+pub use proc_lock_macro::*;

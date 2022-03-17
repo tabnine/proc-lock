@@ -1,4 +1,4 @@
-use proclock_macro::proclock;
+use proc_lock_macro::proc_lock;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
 use std::thread;
@@ -27,7 +27,7 @@ fn nested_calls_to_a_function_with_blocking_macro_annotation_should_block_the_ca
     });
 }
 
-#[proclock(name = "block.lock")]
+#[proc_lock(name = "block.lock")]
 fn blocking_lock(f: impl Fn()) {
     f();
 }

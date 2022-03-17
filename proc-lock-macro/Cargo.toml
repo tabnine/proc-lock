@@ -1,12 +1,12 @@
 [package]
-name = "proclock-macro"
-description = "Macro API for the proclock crate"
-version = "0.2.0"
+name = "proc-lock-macro"
+description = "Macro API for the proc-lock crate"
+version = "0.3.0"
 edition = "2021"
 license = "MIT"
 readme = "../README.md"
-documentation = "https://docs.rs/proclock"
-repository = "https://github.com/tabnine/proclock"
+documentation = "https://docs.rs/proc-lock"
+repository = "https://github.com/tabnine/proc-lock"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,8 +15,9 @@ quote = "1.0.5"
 proc-macro2 = "1.0.12"
 syn = { version = "1.0.40", features = ["full"] }
 darling = "0.13.1"
-proclock-api = "0.1.2"
-#proclock-api = { path = "../proclock-api" }
+
+proc-lock-api = "0.3.0"
+#proc-lock-api = { path = "../proc-lock-api" }
 
 [lib]
 proc-macro = true
