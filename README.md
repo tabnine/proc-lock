@@ -40,7 +40,7 @@ fn a_sensitive_function() {}
 ### Current status
 ⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.
 
-### Changelist
+### Changelog
 - 0.3.2 - Fix macro compilation
 - 0.3.1 - Change docs
 - 0.3.0 - [breaking changes] Rename crate to `proc-lock`, and the macro to `proc_lock`
@@ -49,4 +49,5 @@ fn a_sensitive_function() {}
 
 ### Contribution
 Please refer to [our project](https://github.com/tabnine/proc-lock/projects/1), as well as open issues.
-Also feel free to discuss and open PRs if you want to contribute anything not mentioned in the above places.
+
+Also feel free to discuss and open PRs regardless :)
