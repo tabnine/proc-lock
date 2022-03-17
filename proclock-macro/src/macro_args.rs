@@ -6,6 +6,4 @@ pub(crate) struct MacroArgs {
     pub(crate) name: String,
     #[darling(default)]
     pub(crate) absolute: bool,
-    #[darling(default)]
-    pub(crate) blocking: bool,
 }

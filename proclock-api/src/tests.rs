@@ -1,7 +1,6 @@
 use crate::{try_lock, LockPath};
 use spectral::assert_that;
 use spectral::prelude::*;
-use std::io::ErrorKind;
 
 #[test]
 fn should_return_err_when_file_is_already_locked() {

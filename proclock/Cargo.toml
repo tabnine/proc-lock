@@ -11,7 +11,7 @@ repository = "https://github.com/tabnine/proclock"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-proclock-macro = "0.1.2"
+#proclock-macro = "0.1.2"
 proclock-api = "0.1.2"
-#proclock-macro = { path = "../proclock-macro", version = "0.1.2" }
-#proclock-api = { path = "../proclock-api", version = "0.1.2" }
+proclock-macro = { path = "../proclock-macro" }
+#proclock-api = { path = "../proclock-api" }

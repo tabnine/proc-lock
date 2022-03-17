@@ -1,5 +1,4 @@
 use proclock_macro::proclock;
-use std::panic::catch_unwind;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
 use std::thread;
@@ -28,18 +27,7 @@ fn nested_calls_to_a_function_with_blocking_macro_annotation_should_block_the_ca
     });
 }
 
-#[test]
-fn nested_calls_to_a_function_with_non_blocking_macro_annotation_should_yield_panic() {
-    let result = catch_unwind(|| non_blocking_lock(|| non_blocking_lock(|| {})));
-    assert!(result.is_err());
-}
-
-#[proclock(name = "non_block.lock")]
-fn non_blocking_lock(f: impl Fn()) {
-    f();
-}
-
-#[proclock(name = "block.lock", blocking = true)]
+#[proclock(name = "block.lock")]
 fn blocking_lock(f: impl Fn()) {
     f();
 }
