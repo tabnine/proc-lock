@@ -31,7 +31,7 @@ fn main() {
  a_sensitive_function();
 }
 
-#[proclock(name = "my_lock.lock", blocking = true)] // default value for `blocking` is `false`
+#[proclock(name = "my_lock.lock")]
 fn a_sensitive_function() {}
 ```
 

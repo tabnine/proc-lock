@@ -19,7 +19,7 @@ use syn::{AttributeArgs, ItemFn};
 /// ```rust
 /// use proclock_macro::proclock;
 ///
-/// #[proclock(name = "my_lock.lock", absolute = false, blocking = true)]
+/// #[proclock(name = "my_lock.lock", absolute = false)]
 /// fn my_locked_function() {}
 /// ```
 /// # Panics
