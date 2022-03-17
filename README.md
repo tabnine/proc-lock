@@ -46,5 +46,5 @@ fn a_sensitive_function() {}
 - 0.2.0 - [breaking changes] Stop supporting non-blocking macro api
 
 ### Contribution
-Please refer to [our prject](https://github.com/tabnine/proc-lock/projects/1), as well as open issues.
+Please refer to [our project](https://github.com/tabnine/proc-lock/projects/1), as well as open issues.
 Also feel free to discuss and open PRs if you want to contribute anything not mentioned in the above places.
