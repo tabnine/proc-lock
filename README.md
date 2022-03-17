@@ -3,7 +3,7 @@ Developed with ❤️ by [Tabnine](https://www.tabnine.com)
 ---
 # PLEASE NOTE: THIS CRATE HAS BEEN RENAMED
 
-It used to be `proclock`, but it's been renamed to `proc-lock`.
+It used to be `proclock`, but it's been renamed to [proc-lock](https://crates.io/crates/proc-lock).
 
 Please update your dependencies to receive newer versions.
 

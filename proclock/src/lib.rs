@@ -1,3 +1,12 @@
+//! ---
+//! # PLEASE NOTE: THIS CRATE HAS BEEN RENAMED
+//!
+//! It used to be `proclock`, but it's been renamed to [proc-lock](https://crates.io/crates/proc-lock).
+//!
+//! Please update your dependencies to receive newer versions.
+//!
+//! ---
+//!
 //! A simple cross-process locking API.
 //! # Implementation
 //! This crate uses [`fs2`](https://docs.rs/fs2) to exclusively lock files, and provides a convenient API to
