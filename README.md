@@ -1,5 +1,14 @@
 Developed with ❤️ by [Tabnine](https://www.tabnine.com)
 
+---
+# PLEASE NOTE: THIS CRATE HAS BEEN RENAMED
+
+It used to be `proclock`, but it's been renamed to `proc-lock`.
+
+Please update your dependencies to receive newer versions.
+
+---
+
 # Proclock
 A simple cross-process locking API.
 
@@ -39,4 +48,5 @@ fn a_sensitive_function() {}
 ⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.
 
 ### Changelist
+- 0.2.1 - Add a notice about renaming the crate 
 - 0.2.0 - [breaking changes] Stop supporting non-blocking macro api
