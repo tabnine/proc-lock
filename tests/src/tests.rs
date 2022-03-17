@@ -1,4 +1,4 @@
-use proc_lock_macro::proc_lock;
+use proc_lock::proc_lock;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
 use std::thread;

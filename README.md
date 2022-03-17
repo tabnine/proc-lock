@@ -41,6 +41,7 @@ fn a_sensitive_function() {}
 ⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.
 
 ### Changelist
+- 0.3.2 - Fix macro compilation
 - 0.3.1 - Change docs
 - 0.3.0 - [breaking changes] Rename crate to `proc-lock`, and the macro to `proc_lock`
 - 0.2.1 - Add a notice about renaming the crate 

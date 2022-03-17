@@ -2,5 +2,6 @@
 members = [
     "proc-lock",
     "proc-lock-macro",
-    "proc-lock-api"
+    "proc-lock-api",
+    "tests"
 ]
