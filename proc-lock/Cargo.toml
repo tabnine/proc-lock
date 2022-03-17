@@ -1,0 +1,17 @@
+[package]
+name = "proc-lock"
+description = "A simple cross-process locking API"
+version = "0.3.0"
+edition = "2021"
+license = "MIT"
+readme = "../README.md"
+documentation = "https://docs.rs/proc-lock"
+repository = "https://github.com/tabnine/proc-lock"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc-lock-macro = "0.3.0"
+proc-lock-api = "0.3.0"
+#proc-lock-macro = { path = "../proc-lock-macro" }
+#proc-lock-api = { path = "../proc-lock-api" }

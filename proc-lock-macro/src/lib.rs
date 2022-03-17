@@ -17,15 +17,15 @@ use syn::{AttributeArgs, ItemFn};
 /// or as an absolute path (at the root directory). Default is `false`.
 /// # Example
 /// ```rust
-/// use proclock_macro::proclock;
+/// use proc_lock_macro::proc_lock;
 ///
-/// #[proclock(name = "my_lock.lock", absolute = false)]
+/// #[proc_lock(name = "my_lock.lock", absolute = false)]
 /// fn my_locked_function() {}
 /// ```
 /// # Panics
 /// This macro will panic if the underlying locking function call fails.
 #[proc_macro_attribute]
-pub fn proclock(args: TokenStream, input: TokenStream) -> TokenStream {
+pub fn proc_lock(args: TokenStream, input: TokenStream) -> TokenStream {
     let options = syn::parse_macro_input!(args as AttributeArgs);
     let function = syn::parse_macro_input!(input as ItemFn);
 
@@ -35,7 +35,7 @@ pub fn proclock(args: TokenStream, input: TokenStream) -> TokenStream {
     };
 
     let locking_code = quote! {
-        use proclock_api::{lock, try_lock, LockPath};
+        use proc_lock_api::{lock, try_lock, LockPath};
         let lock_path = if #absolute {
             LockPath::FullPath(#name)
         } else {

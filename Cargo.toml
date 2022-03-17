@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "proclock",
-    "proclock-macro",
-    "proclock-api"
+    "proc-lock",
+    "proc-lock-macro",
+    "proc-lock-api"
 ]
