@@ -6,10 +6,10 @@ use proc_macro::TokenStream;
 use quote::quote;
 use syn::{AttributeArgs, ItemFn};
 
-/// _⚠ Use with caution - this macro panics on error - See `Panics` section below._
-///
 /// Wraps the annotated function with a blocking lock that is released when
 /// the function is returned.
+///
+///  _⚠ Use with caution - this macro panics on error - See `Panics` section below._
 ///
 /// # Args:
 /// - `name`: The name of the lock. Can be any relative / absolute path.

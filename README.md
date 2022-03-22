@@ -1,4 +1,4 @@
-Developed with ❤️ by [Tabnine](https://www.tabnine.com)
+Developed with ❤️ by [Tabnine](https://www.tabnine.com/?utm_source=referral&utm_medium=organic&utm_campaign=proc-lock)
 
 # Proc-lock
 A simple cross-process locking API.
@@ -41,6 +41,7 @@ fn a_sensitive_function() {}
 ⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.
 
 ### Changelog
+- 0.3.3 - Minor docs changes
 - 0.3.2 - Fix macro compilation
 - 0.3.1 - Change docs
 - 0.3.0 - [breaking changes] Rename crate to `proc-lock`, and the macro to `proc_lock`
