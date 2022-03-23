@@ -53,3 +53,13 @@ fn a_sensitive_function() {}
 Please refer to [our project](https://github.com/tabnine/proc-lock/projects/1), as well as open issues.
 
 Also feel free to discuss and open PRs regardless :)
+
+### Developement
+1. Run tests:
+```bash
+cargo test
+```
+2. Run clippy
+```bash
+cargo clippy --all --all-targets --all-features -- --no-deps -D clippy::pedantic
+```
