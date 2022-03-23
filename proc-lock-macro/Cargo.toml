@@ -16,8 +16,7 @@ proc-macro2 = "1.0.12"
 syn = { version = "1.0.40", features = ["full"] }
 darling = "0.13.1"
 
-proc-lock-api = "0.3.0"
-#proc-lock-api = { path = "../proc-lock-api" }
+proc-lock-api = { path = "../proc-lock-api", version = "0.3.3" }
 
 [lib]
 proc-macro = true

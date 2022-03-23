@@ -41,6 +41,7 @@ fn a_sensitive_function() {}
 ⚠️This crate is in its early stages, breaking changes are expected in upcoming releases.
 
 ### Changelog
+- 0.4.0 - Change interdependencies to local for better development process
 - 0.3.3 - Minor docs changes
 - 0.3.2 - Fix macro compilation
 - 0.3.1 - Change docs
